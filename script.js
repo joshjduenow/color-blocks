@@ -6,13 +6,17 @@ let blueCounter = 0;
 let greenCounter = 0;
 let yellowCounter = 0;
 
-// function deleteRedButton(event) {
-//     console.log('You deleted a Red!', event.target);
+function deleteRedButton(event) {
+    console.log('You deleted a Red!', event.target);
 
-//     event.target.remove();
+    event.target.remove();
+    
+    redCounter --;
+    console.log(redCounter);
+    document.getElementById('red-count').textContent = redCounter
+    
 
-
-// }
+}
 
 function onRedButton() {
     console.log('You clicked Red!');
@@ -29,13 +33,17 @@ document.getElementById('red-count').textContent = redCounter
 
 }
 
-// function deleteBlueButton(event) {
-//     console.log('You deleted a Blue!', event.target);
+function deleteBlueButton(event) {
+    console.log('You deleted a Blue!', event.target);
 
-//     event.target.remove();
+    event.target.remove();
+    
+    blueCounter --;
+    console.log(blueCounter);
+    document.getElementById('blue-count').textContent = blueCounter
 
 
-// }
+}
 
 function onBlueButton() {
     console.log('You clicked Blue!');
@@ -50,13 +58,17 @@ function onBlueButton() {
 
 }
 
-// function deleteGreenButton(event) {
-//     console.log('You deleted a Green!', event.target);
+function deleteGreenButton(event) {
+    console.log('You deleted a Green!', event.target);
 
-//     event.target.remove();
+    event.target.remove();
+
+    greenCounter --;
+    console.log(greenCounter);
+    document.getElementById('green-count').textContent = greenCounter
 
 
-// }
+}
 
 function onGreenButton() {
     console.log('You clicked Green!');
@@ -71,13 +83,16 @@ function onGreenButton() {
 
 }
 
-// function deleteYellowButton(event) {
-//     console.log('You deleted a Yellow!', event.target);
+function deleteYellowButton(event) {
+    console.log('You deleted a Yellow!', event.target);
 
-//     event.target.remove();
+    event.target.remove();
 
+    yellowCounter --;
+    console.log(yellowCounter);
+    document.getElementById('yellow-count').textContent = yellowCounter
 
-// }
+}
 
 function onYellowButton() {
     console.log('You clicked Yellow!');
