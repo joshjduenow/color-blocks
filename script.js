@@ -64,6 +64,11 @@ function onGreenButton() {
     let greenButton = document.getElementById('blocks');
 
     greenButton.innerHTML += '<div onclick="deleteGreenButton(event)"><div class="block green-fill"></div></div>';
+
+    greenCounter ++;
+    console.log(greenCounter);
+    document.getElementById('green-count').textContent = greenCounter
+
 }
 
 // function deleteYellowButton(event) {
@@ -80,6 +85,11 @@ function onYellowButton() {
     let yellowButton = document.getElementById('blocks');
 
     yellowButton.innerHTML += '<div onclick="deleteYellowButton(event)"><div class="block yellow-fill"></div></div>';
+
+    yellowCounter ++;
+    console.log(yellowCounter);
+    document.getElementById('yellow-count').textContent = yellowCounter
+
 }
 onReady()
 
