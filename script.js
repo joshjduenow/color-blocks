@@ -1,31 +1,41 @@
 function onReady() { }
 console.log('🟥 🟦 🟩 🟨');
 
+let redCounter = 0;
+let blueCounter = 0;
+let greenCounter = 0;
+let yellowCounter = 0;
+
+// function deleteRedButton(event) {
+//     console.log('You deleted a Red!', event.target);
+
+//     event.target.remove();
 
 
-function deleteRedButton(event) {
-    console.log('You deleted a Red!', event.target);
-
-    event.target.remove();
-
-
-}
+// }
 
 function onRedButton() {
     console.log('You clicked Red!');
 
     let redButton = document.getElementById('blocks');
 
+
     redButton.innerHTML += '<div onclick="deleteRedButton(event)"><div class="block red-fill"></div></div>';
-}
 
-function deleteBlueButton(event) {
-    console.log('You deleted a Blue!', event.target);
-
-    event.target.remove();
+    redCounter ++;
+console.log(redCounter);
+document.getElementById('red-count').textContent = redCounter
 
 
 }
+
+// function deleteBlueButton(event) {
+//     console.log('You deleted a Blue!', event.target);
+
+//     event.target.remove();
+
+
+// }
 
 function onBlueButton() {
     console.log('You clicked Blue!');
@@ -33,15 +43,20 @@ function onBlueButton() {
     let blueButton = document.getElementById('blocks');
 
     blueButton.innerHTML += '<div onclick="deleteBlueButton(event)"><div class="block blue-fill"></div></div>';
-}
 
-function deleteGreenButton(event) {
-    console.log('You deleted a Green!', event.target);
-
-    event.target.remove();
-
+    blueCounter ++;
+    console.log(blueCounter);
+    document.getElementById('blue-count').textContent = blueCounter
 
 }
+
+// function deleteGreenButton(event) {
+//     console.log('You deleted a Green!', event.target);
+
+//     event.target.remove();
+
+
+// }
 
 function onGreenButton() {
     console.log('You clicked Green!');
@@ -51,13 +66,13 @@ function onGreenButton() {
     greenButton.innerHTML += '<div onclick="deleteGreenButton(event)"><div class="block green-fill"></div></div>';
 }
 
-function deleteYellowButton(event) {
-    console.log('You deleted a Yellow!', event.target);
+// function deleteYellowButton(event) {
+//     console.log('You deleted a Yellow!', event.target);
 
-    event.target.remove();
+//     event.target.remove();
 
 
-}
+// }
 
 function onYellowButton() {
     console.log('You clicked Yellow!');
